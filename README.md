@@ -1,2 +1,2 @@
-# overwatcher
-The OverWatcher trading/volume API
+# OverWatcher
+
