@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Monospace !important;
+  font-size: 14px !important;
+}
+
+:root {
+  --bg-color: black;
+  --font-color: white;
+  --sell-color: red;
+  --buy-color: #00CD00;
+  --bot-color: grey;
+  --newdex-color: #A23FC4;
+  --withdraw-color: #3AE2ED;
+
+  .light {
+    --bg-color: white;
+    --font-color: black;
+    --sell-color: red;
+    --buy-color: #00CD00;
+    --bot-color: grey;
+    --newdex-color: #A23FC4;
+    --withdraw-color: #3AE2ED;
+  }
+}
+
+.mat-select-panel-wrap {
+  .mat-select-panel {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border: 1px solid grey;
+  }
+
+  .mat-option-text {
+    color: var(--font-color);
+  }
+
+  .mat-selected {
+    .mat-option-text {
+      color: green;
+    }
+  }
+}
+
+.cdk-virtual-scroll-content-wrapper {
+  overflow-x: auto;
+  // min-height: 101%;
+}
+
+
+.h-100 {
+  .cdk-virtual-scroll-content-wrapper {
+    height: 100%;
+  }
+}
+
+.mat-dialog-container {
+  padding: 2px !important;
+}
+
+.mat-checkbox-frame {
+  background-color: var(--font-color) !important;
+}
