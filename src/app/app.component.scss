@@ -1,0 +1,40 @@
+.preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // right: 0;
+  // bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    width: 50%;
+    color: var(--font-color);
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    // opacity: 0.8;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview {
+    .logo {
+      font-size: 2rem;
+
+      .title {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
